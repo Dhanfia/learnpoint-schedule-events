@@ -12,14 +12,173 @@
 <body>
     <aside>
 <nav>
-    <a href="/index.html">Home</a>
-    <a href="/about.html">About</a>
+    <a href="/index.html">Hem</a>
+     <a href="/index.html">Aviseringar</a>
+    <a href="/calendar.html">Kalender</a>
 </nav>
 </aside>
     <main>
-        <h1>Hello World</h1>
+        <div class="calendar">
 
-<p>This is the index page.</p>
+    <div class="calendar__sidebar">
+        View filter
+    </div>
+
+    <div class="calendar__main">
+        <!-- Header -->
+        <div class="calendar__header">
+            <div></div>
+            <div class="calendar__day">Mon, 4</div>
+            <div class="calendar__day CURRENT">Tue, 5</div>
+            <div class="calendar__day">Wed, 6</div>
+            <div class="calendar__day">Thu, 7</div>
+            <div class="calendar__day">Fri, 8</div>
+            <div class="calendar__day">Sat, 9</div>
+            <div class="calendar__day">Sun, 10</div>
+        </div>
+
+        <div class="calendar__grid">
+            <!-- Time column -->
+            <div class="calendar__grid-times">
+                <div class="calendar__grid-time">08:00</div>
+                <div class="calendar__grid-time">09:00</div>
+                <div class="calendar__grid-time">10:00</div>
+                <div class="calendar__grid-time">11:00</div>
+                <div class="calendar__grid-time">12:00</div>
+                <div class="calendar__grid-time">13:00</div>
+                <div class="calendar__grid-time">14:00</div>
+                <div class="calendar__grid-time">15:00</div>
+                <div class="calendar__grid-time">16:00</div>
+                <div class="calendar__grid-time">17:00</div>
+            </div>
+
+            <!-- Grid -->
+            <div class="calendar__grid-days">
+
+                <!-- Monday -->
+                <div class="calendar__grid-day">
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+
+                    <div class="calendar__grid-event exam">Exam
+                        <div>8:30 - 10:30</div>
+                    </div>
+                </div>
+
+                <!-- Tuesday -->
+                <div class="calendar__grid-day">
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                </div>
+
+                <!-- Wednesday -->
+                <div class="calendar__grid-day">
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+
+                    <div class="calendar__grid-event activity">Activity Session
+                        <div>13:00 - 14:30</div>
+                    </div>
+                </div>
+
+                <!-- Thursday -->
+                <div class="calendar__grid-day">
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-event multiple-groups">
+                        <div class="calendar__event-dots">
+                            <div class="calendar__event-dot" style="background: rgb(29, 158, 117);"></div>
+                            <div class="calendar__event-dot" style="background: rgb(55, 138, 221);"></div>
+                            <div class="calendar__event-dot" style="background: rgb(239, 159, 39);"></div>
+                            <div class="calendar__event-dot" style="background: rgb(127, 119, 221);"></div>
+                        </div>
+                        <div>Assembly</div>
+                        <div>08:30 - 10:00</div>
+                    </div>
+                </div>
+
+                <!-- Friday -->
+                <div class="calendar__grid-day">
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+
+                    <div class="calendar__grid-event quiz">Quiz
+                        <div>10:00 - 11:00</div>
+                    </div>
+
+                </div>
+
+                <!-- Saturday -->
+                <div class="calendar__grid-day">
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                </div>
+
+                <!-- Sunday -->
+                <div class="calendar__grid-day">
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                    <div class="calendar__grid-slot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     </main>
 </body>
 

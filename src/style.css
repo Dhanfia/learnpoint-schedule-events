@@ -1,18 +1,143 @@
 body {
     font-family: -apple-system, 'Segoe UI', sans-serif;
-    background-color: #f0f0f0;
+    background-color:hsl(38 35% 97% / 1);
 }
 
 nav {
     margin: 2em 0 1em;
     text-align: center;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 107, 219);
 }
 
 main {
-    width: 640px;
-    margin: 0 auto;
-    padding: 1em 1em 2em;
+    max-width: 1200px;
+    margin: 36px auto;
+    padding: 1em;
     border-radius: .5em;
     background-color: #fff;
     text-align: center;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+}
+
+
+.calendar__main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    /* height: 100vh; */
+}
+
+.calendar__header {
+    display: grid;
+    grid-template-columns: 60px repeat(7, 1fr);
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar__sidebar {
+    border-right: 1px solid #ddd;
+}
+
+.calendar__day {
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar__day.CURRENT {
+    font-weight: bold;
+}
+
+/* Main layout */
+.calendar__grid {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
+
+
+.calendar__grid-times {
+    border-right: 1px solid #ddd;
+}
+
+.calendar__grid-time {
+    height: 70px;
+    font-size: 12px;
+    color: #666;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.calendar__grid-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar__grid-day {
+    position: relative;
+    border-right: 1px solid #eee;
+}
+
+.calendar__grid-slot {
+    height: 70px;
+    border-bottom: 1px solid #eee;
+}
+
+.calendar__grid-event {
+    position: absolute;
+    left: 2%;
+    width: 95%;
+    color: #222930;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.calendar__grid-event.multiple-groups {
+    top: 40px;
+    height: 100px;
+    background: #faf4ec;
+}
+
+.calendar__grid-event.exam {
+    top: 40px;
+    height: 140px;
+    background: #a5d8ff;
+}
+
+.calendar__grid-event.activity {
+    top: 354px;
+    height: 120px;
+    background: #fcc2d7;
+}
+
+.calendar__grid-event.quiz {
+    top: 140px;
+    height: 70px;
+    background: #ffec99;
+}
+
+.calendar__event-dots {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+
+.calendar__event-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
